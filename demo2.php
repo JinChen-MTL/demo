@@ -8,7 +8,7 @@ $password = 'zh102657.';
 $database = '353projj';
  
 $con = mysqli_init();
-mysqli_ssl_set($con,NULL,NULL, "C:\MinGW\DigiCertGlobalRootCA.crt", NULL, NULL);
+mysqli_ssl_set($con,NULL,NULL, "DigiCertGlobalRootCA.crt", NULL, NULL);
 mysqli_real_connect($con, "localhost3306.mysql.database.azure.com", "localhost3306", "zh102657.", "353projj", 3306, MYSQLI_CLIENT_SSL);
 // Check for errors
 if(mysqli_connect_errno()){
