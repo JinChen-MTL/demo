@@ -1,5 +1,7 @@
 <?php
-session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 $server = 'localhost3306.mysql.database.azure.com';
 $username = 'localhost3306';
 $password = 'zh102657.';
