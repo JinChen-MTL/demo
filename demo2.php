@@ -2,9 +2,9 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-$server = 'localhost3306.mysql.database.azure.com';
-$username = 'localhost3306';
-$password = 'zh102657.';
+$server = '184.107.41.83';
+$username = 'jinchenc_db';
+$password = 'Zh102657';
 $database = '353projj';
  
 $con = mysqli_init();
