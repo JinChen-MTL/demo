@@ -6,14 +6,19 @@ $server = '184.107.41.83';
 $username = 'jinchenc_db';
 $password = 'Zh102657';
 $database = '353projj';
+  
  
-$con = mysqli_init();
-mysqli_ssl_set($con,NULL,NULL, "DigiCertGlobalRootCA.crt", NULL, NULL);
-mysqli_real_connect($con, "localhost3306.mysql.database.azure.com", "localhost3306", "zh102657.", "353projj", 3306, MYSQLI_CLIENT_SSL);
+$connection = mysqli_connect($server, $username, $password, $database);
+
 // Check for errors
-if(mysqli_connect_errno()){
- echo mysqli_connect_error();
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
 }
+
+// Connection successful
+echo "Connected successfully";
+ 
+ 
 // Execute a query to get sample data
 $Employee = "SELECT * FROM employees";
 $result = $con->query($Employee);
