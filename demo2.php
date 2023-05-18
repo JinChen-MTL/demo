@@ -1,8 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-$server = 'localhost';
+
+$server = 'localhosct';
 $username = 'jinchenc_db';
 $password = 'Zh102657';
 $database = 'jinchenc_db';
